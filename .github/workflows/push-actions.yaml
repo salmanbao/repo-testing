@@ -32,31 +32,5 @@ jobs:
       run : yarn run lint
     - name: Run Tests
       run: yarn test
-
-  Danger-Review:
-    needs: Building
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [20.x]
-    steps:
-      - name: Get Code
-        uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Load & Cache Dependencies
-        uses: ./.github/actions/cached-deps
-
-      - name: Set up Git and run Danger
-        env:
-          GITHUB_TOKEN: ${{ secrets.DANGER_CI_TOKEN }}
-        run: |
-          git config --global user.name 'dangercibot'
-          git config --global user.email 'dangercibot@gmail.com'
-          yarn run danger:ci
+    - name: Danger  
+      run: yarn danger ci
