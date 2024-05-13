@@ -1,0 +1,1 @@
+{"version":3,"file":"generate-pubkey.js","sourceRoot":"","sources":["../src/generate-pubkey.ts"],"names":[],"mappings":";;AAAA,2CAAiD;AACjD,uCAA4C;AAE5C,KAAK,UAAU,IAAI;IAEjB,MAAM,MAAM,GAAG,IAAI,iBAAM,CAAC,8BAAkB,CAAC,CAAC;IAC9C,OAAO,CAAC,GAAG,CAAC,IAAA,mBAAQ,EAAC,MAAM,CAAC,SAAS,CAAC,CAAC,CAAC;AAE1C,CAAC;AAED,IAAI,EAAE,CAAC"}
