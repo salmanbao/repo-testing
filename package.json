@@ -18,7 +18,8 @@
         "test:cov": "jest --coverage",
         "pm2:start": "pm2 start ecosystem.config.js",
         "setup": "node src/scripts/setup.js",
-        "test-jkl": "npx ts-node src/scripts/test-drop-jkl.ts"
+        "test-jkl": "npx ts-node src/scripts/test-drop-jkl.ts",
+        "danger:ci": "danger ci"
     },
     "keywords": [],
     "author": "",
@@ -43,6 +44,7 @@
     "devDependencies": {
         "@types/node": "^20.1.7",
         "concurrently": "^8.0.1",
+        "danger": "^11.2.8",
         "rimraf": "^5.0.1",
         "nodemon": "^2.0.22",
         "typescript": "^5.0.4",

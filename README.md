@@ -60,4 +60,7 @@ Technologies used in the project:
 *   EsLint
 *   Jest
 *   PM2
-*   Typescript
+*   
+
+
+Events -> Jobs -> Runners -> Steps -> Actions
