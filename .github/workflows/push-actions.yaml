@@ -32,7 +32,10 @@ jobs:
       run : yarn run lint
     - name: Run Tests
       run: yarn test
-    - name: Danger  
-      run: yarn danger ci
+    - name: Set up Git and run Danger  
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+          git config --global user.name 'salmanbao'
+          git config --global user.email 'salmancodez@gmail.com'
+          yarn run danger:ci
