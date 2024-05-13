@@ -19,7 +19,8 @@
         "pm2:start": "pm2 start ecosystem.config.js",
         "setup": "node src/scripts/setup.js",
         "test-jkl": "npx ts-node src/scripts/test-drop-jkl.ts",
-        "danger:ci": "danger ci"
+        "danger:ci": "danger ci",
+        "danger:pr": "danger pr"
     },
     "keywords": [],
     "author": "",
