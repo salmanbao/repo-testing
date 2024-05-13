@@ -1,0 +1,9 @@
+/dist
+/node_modules
+/logs
+
+package-lock.json
+
+.env
+.env.local
+.env.main
