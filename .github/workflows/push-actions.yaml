@@ -34,7 +34,7 @@ jobs:
       run: yarn test
     - name: Set up Git and run Danger  
       env:
-        DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
       run: |
           git config --global user.name 'salmanbao'
           git config --global user.email 'salmancodez@gmail.com'
